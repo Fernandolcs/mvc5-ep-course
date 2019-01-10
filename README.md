@@ -22,3 +22,5 @@
 	Deploy
 	Cloud
 	Testes
+
+	50:00
