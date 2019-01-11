@@ -10,8 +10,8 @@ namespace MFEC.Domain.Models
         public string CPF { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime RegisterDate { get; set; }
-        private bool Active { get; set; }
-        private bool Removed { get; set; }
+        public bool Active { get; set; }
+        public bool Removed { get; set; }
 
         // EF navigation property
         public virtual ICollection<Address> Address { get; private set; }
