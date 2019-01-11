@@ -3,9 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{348A9FC1-07F5-4098-90D8-04FEF314AB95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{FF882214-DA65-468F-84B0-19C9C6548702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{302C1BE7-DA58-4F9F-AF68-DF9167D7A043}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{8E49C36A-27D1-46F7-8CD9-0453316C9AE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{F0CEE8BA-8622-4AB5-90D3-0C60F152EF31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{9B034A33-F85D-47E7-A60F-CA3D7C55BBE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{349BBCEC-5896-4F52-A0D8-006EA93B90EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFEC.Domain", "src\MFEC.Domain\MFEC.Domain.csproj", "{50964D1F-7F3B-46AD-99A7-029D993EC9BA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50964D1F-7F3B-46AD-99A7-029D993EC9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50964D1F-7F3B-46AD-99A7-029D993EC9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50964D1F-7F3B-46AD-99A7-029D993EC9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50964D1F-7F3B-46AD-99A7-029D993EC9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B034A33-F85D-47E7-A60F-CA3D7C55BBE1} = {F0CEE8BA-8622-4AB5-90D3-0C60F152EF31}
+		{349BBCEC-5896-4F52-A0D8-006EA93B90EC} = {F0CEE8BA-8622-4AB5-90D3-0C60F152EF31}
+		{50964D1F-7F3B-46AD-99A7-029D993EC9BA} = {8E49C36A-27D1-46F7-8CD9-0453316C9AE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BB43D21-FA0B-46BF-B2CB-618B6C63F159}
