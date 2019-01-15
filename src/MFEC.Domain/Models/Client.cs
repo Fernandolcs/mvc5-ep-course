@@ -17,7 +17,7 @@ namespace MFEC.Domain.Models
         public virtual ICollection<Address> Address { get; private set; }
 
         // EF constructor
-        protected Client()
+        public Client()
         {
             Address = new List<Address>();
         }

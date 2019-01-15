@@ -1,4 +1,6 @@
-﻿namespace MFEC.Domain.Models
+﻿using System;
+
+namespace MFEC.Domain.Models
 {
     public class Address : Entity
     {
@@ -15,6 +17,7 @@
             return true;
         }
 
+        public Guid ClientId { get; set; }
         public Client Client { get; set; }
     }
 }

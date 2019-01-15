@@ -1,4 +1,5 @@
 ﻿using MFEC.Domain.Models;
+using MFEC.Infra.Data.EntityConfig;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -11,7 +12,7 @@ namespace MFEC.Infra.Data.Context
 {
     public class MfecContext : DbContext
     {
-        public MfecContext() //: base("")
+        public MfecContext() : base("DefaultConnection")
         {
 
         }
@@ -31,6 +32,9 @@ namespace MFEC.Infra.Data.Context
 
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
+
+            modelBuilder.Configurations.Add(new ClientConfig());
+            modelBuilder.Configurations.Add(new AddressConfig());
 
             base.OnModelCreating(modelBuilder);
         }

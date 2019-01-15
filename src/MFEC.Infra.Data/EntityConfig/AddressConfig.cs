@@ -30,6 +30,11 @@ namespace MFEC.Infra.Data.EntityConfig
             Property(c => c.State)
                     .IsRequired();
 
+            HasRequired(c => c.Client)
+                .WithMany()
+                .HasForeignKey(x => x.ClientId);
+
+
             ToTable("Addressess");
         }
     }

@@ -6,6 +6,11 @@ namespace MFEC.Domain.Models
     {
         public Guid Id { get; set; }
 
+        public Entity()
+        {
+            Id = new Guid();
+        }
+
         public abstract bool IsValid();
     }
 }

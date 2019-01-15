@@ -23,4 +23,4 @@
 	Cloud
 	Testes
 
-	2:30
+	1:45
